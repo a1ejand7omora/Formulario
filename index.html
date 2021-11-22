@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Quieres Saber Si Eres Real?</h1>
+          <p id="description" class="description text-center">
+            “Por andar por las nubes uno se olvida del suelo.”
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Tu Nombre?"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Tu Email?"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Edad<span class="clue">(opcional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Edad"
+            />
+          </div>
+          <div class="form-group">
+            <p>Realmente Puedes Sentir y Si Es Asi Que Sientes</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecciona Como Te Sientes</option>
+              <option value="student">No Sientes Nada</option>
+              <option value="job">Sientes Todo</option>
+              <option value="learner">Sientes Solo Por Ti</option>
+              <option value="preferNo">Evades Lo Que Sientes</option>
+              <option value="other">Otros</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Que Es La Mente?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Es Un Sistema De Pulsos, O Algo Tangible?</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Algo Real. ¿Que Es Lo Real? Nada Realmente.</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Yo Que Se!</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Si Pudieras Decidir Que Soñar, Que Soñarias?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Selecciona Una Opcion</option>
+              <option value="challenges">Soñaria Con Pitágoras</option>
+              <option value="projects">Soñaria Con Albert Einstein</option>
+              <option value="community">Soñaria Con Isaac Newton</option>
+              <option value="openSource">Soñaria Con Galileo Galilei</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Si Pudieras Experimentar La Realidad Como Algun Animal Que Animal Te Gustaria ?
+             
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Tiburon</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Aguila</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Toro</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Pulpo</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Condor</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="gitter-help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+              />Leon</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Tortuga</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />buho</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Araña</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Serpiente</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="additional-courses"
+                type="checkbox"
+                class="input-checkbox"
+              />Batracio</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Alguna Figura Mitilogica? Cual...</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Ángel, Basilisco, Cancerbero, Centauro, Chupacabras, Cíclope, Dragon, Duende, Elfos, Esfinge, Fauno y sátiros, Fénix, Gnomos, Gólem, Gorgona Grifos, Hadas...."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+      
+
+
+      <p>
+        <h4>
+          ¿Sabías qué?
+        </h4>
+        El conejo borracho aparece en un capítulo de Los Simpson en la taberna de Moe. Ahí se encuentra  Barney bebiendo, cuando aparece un conejo imaginario a decirle 'Bebe o moriré'. 
+Como es costumbre, la serie de televisión hace referencia a una película, 'El Invisible Harvey', que trata sobre un borracho que tiene un amigo conejo que lo induce al alcoholismo. Todo esto producto de su imaginación, lo que indica que es él mismo quien se destruye.
+La cinta se basa casos reales, basado en testimonios de alcohólicos en situación de calle que comienzan a perder la cordura. La mayoría alucina y crea sus propios amigos imaginarios, que comúnmente, son animales gigantes, que según sus relatos les dicen que beban para que ellos no desaparezcan.
+      </p>
+
+</body>
+</html>
